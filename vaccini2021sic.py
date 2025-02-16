@@ -2,13 +2,12 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import folium
 
 # Carica il file CSV
 def load_data():
     return pd.read_csv('target_vaccinati_sicilia_Isemestre2021.csv')
 
-st.title("DATI VACCINATI I SEMESTRE 2021 SICILIA")
+st.title("DATI VACCINATI PRIMO SEMESTRE 2021 SICILIA")
 
 # Mostra i dati
 df = load_data()
