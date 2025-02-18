@@ -169,6 +169,20 @@ elif project == "Progetto Sonno e Produttività":
         st.write(data.head())
 
     if st.checkbox("📊 Mostra statistiche descrittive"):
+        st.markdown("""
+        Le statistiche descrittive includono:
+
+        - **count**: Il numero di valori non nulli.
+        - **mean**: La media dei valori.
+        - **std**: La deviazione standard (una misura della dispersione dei dati).
+        - **min**: Il valore minimo.
+        - **25%**: Il primo quartile (25° percentile).
+        - **50%**: La mediana (50° percentile).
+        - **75%**: Il terzo quartile (75° percentile).
+        - **max**: Il valore massimo.
+
+        Queste statistiche forniscono una panoramica veloce delle caratteristiche principali dei dati.
+        """)
         st.write(data.describe())
 
     # Filtri per esplorazione
