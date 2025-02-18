@@ -169,7 +169,7 @@ elif project == "Progetto Sonno e Produttività":
         st.write(data.head())
 
     if st.checkbox("📊 Mostra statistiche descrittive"):
-        st.write(data.describe())
+        st.write(data.describe().reset_index())
 
     # Filtri per esplorazione
     st.header("🎯 Filtri Personalizzati")
